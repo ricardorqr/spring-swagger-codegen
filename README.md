@@ -1,5 +1,7 @@
 # Swagger Codegen
 
+This project is an example of simple microservice using OpenAPI Generator.
+
 # References
 
 - https://medium.com/swlh/openapi-swagger-ui-codegen-with-spring-boot-1afb1c0a570e
