@@ -6,8 +6,6 @@ This project is an example of simple microservice using OpenAPI Generator.
 
 The command below will generate all the used classes for the controllers.
 
-
-
 <microserviceV3>$ docker compose up
 
 ```shell
