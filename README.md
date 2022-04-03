@@ -2,6 +2,14 @@
 
 This project is an example of simple microservice using OpenAPI Generator.
 
+# Running the application
+
+The command below will generate all the used classes for the controllers.
+
+```shell
+mvn clean compile
+```
+
 # References
 
 #### OpenAPI Codegen
