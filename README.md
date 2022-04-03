@@ -4,6 +4,13 @@ This project is an example of simple microservice using OpenAPI Generator.
 
 # References
 
+#### OpenAPI Codegen
+
+- https://github.com/OpenAPITools
+- https://openapi-generator.tech/
+
+#### Swagger Codegen
+
 - https://medium.com/swlh/openapi-swagger-ui-codegen-with-spring-boot-1afb1c0a570e
 - https://reflectoring.io/spring-boot-openapi/
 - https://www.youtube.com/watch?v=YmQyzNF5iKg
