@@ -2,7 +2,7 @@ openapi: 3.0.2
 
 info:
   title: Book API
-  description: Book API Specification.
+  description: Book API Specification
   termsOfService: http://swagger.io/terms/
   contact:
     email: ricardorqr@gmail.com
@@ -10,8 +10,9 @@ info:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 0.0.1-SNAPSHOT
+
 servers:
-  - url: /v2/api
+  - url: /v1/api
 
 tags:
   - name: Book
@@ -36,7 +37,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/BookResponse'
+                  $ref: '#/components/schemas/BookResponseNoMessage'
         400:
           description: Bad Request
           content:
@@ -280,9 +281,22 @@ components:
       allOf:
         - $ref: '#/components/schemas/BookDTO'
 
+    BookResponseNoMessage:
+      description: A Book response
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BookDTO'
+
     BookResponse:
       description: A Book response
       type: object
+      required:
+        - message
+      properties:
+        message:
+          description: Details about the response
+          type: string
+          example: Example of message
       allOf:
         - $ref: '#/components/schemas/BookDTO'
 

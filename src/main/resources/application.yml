@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: Book
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher # Swagger
+  datasource: # H2 Database
+    username: sa
+    url: jdbc:h2:mem:book # In memory
+    driverClassName: org.h2.Driver
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  h2: # H2 Console
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+      path: /h2
